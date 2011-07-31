@@ -1,7 +1,7 @@
 %define name gngeo
 %define longname GnGeo
 %define version 0.7
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary: %{longname} - Neo Geo Emulator
 Summary(fr): %{longname} - Emulateur Neo Geo
@@ -38,7 +38,7 @@ It needs NeoGeo Bios and roms that you must of course own to play with.
 	--disable-i386asm
 %endif
 
-%make
+make -j1
 
 %install
 rm -rf %{buildroot}
