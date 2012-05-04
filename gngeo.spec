@@ -1,6 +1,6 @@
 %define name gngeo
 %define longname GnGeo
-%define version 0.8
+%define version 0.8.hg
 %define release %mkrel 1
 
 Summary: %{longname} - Neo Geo Emulator
