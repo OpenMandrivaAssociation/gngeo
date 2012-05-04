@@ -53,6 +53,7 @@ rm -rf %{buildroot}
 %attr(0755,root,games) %{_bindir}/%{name}
 %dir %attr(0755,root,games) %{_datadir}/%{name}
 %{_mandir}/man1/gngeo.1.*
+%{_datadir}/%{name}/gngeo_data.zip
 
 %clean
 rm -rf %{buildroot}
