@@ -34,7 +34,6 @@ It needs NeoGeo Bios and roms that you must of course own to play with.
 %patch0 -p0
 
 %build
-cp Makefile.in 
 %configure2_5x \
 %ifarch %{ix86}
 	--enable-i386asm
