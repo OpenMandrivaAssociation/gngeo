@@ -31,7 +31,7 @@ It needs NeoGeo Bios and roms that you must of course own to play with.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p1
+%patch0 -p0
 
 %build
 cp Makefile.in 
