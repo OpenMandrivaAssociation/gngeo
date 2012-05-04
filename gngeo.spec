@@ -1,7 +1,7 @@
 %define name gngeo
 %define longname GnGeo
-%define version 0.7
-%define release %mkrel 3
+%define version 0.8
+%define release %mkrel 1
 
 Summary: %{longname} - Neo Geo Emulator
 Summary(fr): %{longname} - Emulateur Neo Geo
