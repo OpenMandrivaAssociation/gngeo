@@ -1,6 +1,6 @@
 %define name gngeo
 %define longname GnGeo
-%define version 0.8.hg
+%define version 0.8
 %define release %mkrel 1
 
 Summary: %{longname} - Neo Geo Emulator
@@ -17,7 +17,9 @@ BuildRequires: mesaglu-devel
 %else
 BuildRequires: MesaGLU-devel
 %endif
+
 Source0: http://m.peponas.free.fr/gngeo/download/%{name}-%{version}.tar.bz2
+Patch0: gngeo-mkstate.patch
 Group: Emulators
 License: GPLv2
 URL: http://m.peponas.free.fr/gngeo/
@@ -29,8 +31,10 @@ It needs NeoGeo Bios and roms that you must of course own to play with.
 
 %prep
 %setup -q -n %{name}-%{version}
+%patch0 -p1
 
 %build
+cp Makefile.in 
 %configure2_5x \
 %ifarch %{ix86}
 	--enable-i386asm
