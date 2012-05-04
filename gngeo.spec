@@ -52,13 +52,6 @@ rm -rf %{buildroot}
 %doc AUTHORS COPYING INSTALL NEWS README sample_gngeorc
 %attr(0755,root,games) %{_bindir}/%{name}
 %dir %attr(0755,root,games) %{_datadir}/%{name}
-%{_datadir}/%{name}/romrc
-%{_datadir}/%{name}/romrc.d
-%{_datadir}/%{name}/cursor.bmp
-%{_datadir}/%{name}/gui_font.bmp
-%{_datadir}/%{name}/gui_font2.bmp
-%{_datadir}/%{name}/little_font.bmp
-%{_datadir}/%{name}/sb_arrows.bmp
 %{_mandir}/man1/gngeo.1.*
 
 %clean
