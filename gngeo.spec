@@ -22,7 +22,7 @@ Source0: http://m.peponas.free.fr/gngeo/download/%{name}-%{version}.tar.bz2
 Patch0: gngeo-mkstate.patch
 Group: Emulators
 License: GPLv2
-URL: http://m.peponas.free.fr/gngeo/
+URL: https://m.peponas.free.fr/gngeo/
 BuildRoot: %{_tmppath}/%{name}-build
 
 %description
