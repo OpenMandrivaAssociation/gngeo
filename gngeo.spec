@@ -8,6 +8,11 @@ Summary(fr): %{longname} - Emulateur Neo Geo
 Name: %{name}
 Version: %{version}
 Release: %{release}
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: SDL-devel 
 BuildRequires: SDL_image-devel 
 BuildRequires: nasm 
